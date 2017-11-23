@@ -21,7 +21,7 @@ public class LoginDao {
 			//root: password
 			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/buber", "wyatt","password");
+					"jdbc:mysql://localhost:3306/buber", "sridevi","kuchibotla");
 			
 			
 
@@ -30,7 +30,7 @@ public class LoginDao {
 			// actual query to execute is
 			// select * from users where username = name and password = pass
 			PreparedStatement oPrStmt = con
-					.prepareStatement("select * from login where name=? and pass=?");// ? represents some parameter to include
+					.prepareStatement("select * from login where username=? and password=?");// ? represents some parameter to include
 																							
 			oPrStmt.setString(1, name);// parameter index start from 1
 			oPrStmt.setString(2, pass);
