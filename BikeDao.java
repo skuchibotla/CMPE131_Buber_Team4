@@ -20,7 +20,7 @@ public class BikeDao {
 			//root: password
 			//syntex : databaseurl/databasename, username , password
 			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://localhost:3306/buber", "wyatt", "password");
+					"jdbc:mysql://localhost:3306/buber", "sridevi", "kuchibotla");
 			
 			
 
